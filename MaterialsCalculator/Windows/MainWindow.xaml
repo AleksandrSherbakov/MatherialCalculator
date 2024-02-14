@@ -1,0 +1,47 @@
+﻿<Window x:Class="MaterialsCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialsCalculator"
+        mc:Ignorable="d"
+        Title="{Binding ElementName=MainFrame, Path=Content.Title}"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource base_window}"
+        Height="450" Width="800"
+        Closing="WindowClosing" Closed="WindowClosed" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{StaticResource additional}"/>
+        <Image Margin="10" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="0" Text="Калькуятор строительных материалов"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Foreground="{StaticResource main}"
+        FontSize="20" FontWeight="Bold"/>
+        <Frame x:Name="MainFrame" Grid.Row="1"
+        BorderBrush="{StaticResource akcent}"
+        NavigationUIVisibility="Hidden"
+        BorderThickness="1" />
+        <Button x:Name="BtnEnter"
+        Content="Авторизация" Grid.Row="2"
+        HorizontalAlignment="Left"  Margin="150,10,0,10" Width="100" Panel.ZIndex="100"
+        Click="BtnEnter_Click" />
+        <Button x:Name="BtnHome"
+        Content="Домой" Grid.Row="2"
+        HorizontalAlignment="Center" Margin="0,10,0,10" Width="100" Panel.ZIndex="100"
+        Click="BtnHome_Click" />
+        <Button x:Name="BtnUser"
+        Content="Юзер" Grid.Row="2"
+        HorizontalAlignment="Right" Margin="0,10,150,10" Width="100" Panel.ZIndex="100"
+        Click="BtnUser_Click" />
+        <TextBlock x:Name="TextBlockName" Width="auto"
+        Height="40" HorizontalAlignment="Right"
+        VerticalAlignment="Top"/>
+        <Grid Grid.Row="2" Background="{StaticResource additional}"/>
+    </Grid>
+</Window>

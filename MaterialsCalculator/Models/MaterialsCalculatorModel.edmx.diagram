@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8ef56f860ea471fbfe95bbb67862962" Name="Diagram1">
+        <EntityTypeShape EntityType="MaterialsCalculatorModel.Gender" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MaterialsCalculatorModel.Manufacturer" Width="1.5" PointX="2.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MaterialsCalculatorModel.Material" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MaterialsCalculatorModel.MaterialType" Width="1.5" PointX="2.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MaterialsCalculatorModel.Role" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MaterialsCalculatorModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="MaterialsCalculatorModel.FK__Users__GenderID__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="MaterialsCalculatorModel.FK__Material__Manufa__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="MaterialsCalculatorModel.FK__Material__Materi__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="MaterialsCalculatorModel.FK__Users__RoleID__30F848ED" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

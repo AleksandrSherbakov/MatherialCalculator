@@ -1,0 +1,46 @@
+﻿<Page x:Class="MaterialsCalculator.Pages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MaterialsCalculator.Pages"
+      mc:Ignorable="d" 
+      Style="{StaticResource base_page}"
+      Height="450" Width="800"
+      Title="AdminPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{StaticResource additional}"/>
+        <Image Margin="10"
+    HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="0" Text="Окно админа"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    Foreground="{StaticResource main}"
+    FontSize="20"
+    FontWeight="Bold"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="1">
+                <TextBlock x:Name="TextBlockDayTime" Height="30"
+            Foreground="{StaticResource additional}" />
+                <TextBlock x:Name="TextBlockUserName" Height="30"
+            Foreground="{StaticResource additional}"/>
+                <Button Content="Добавить материал" Click="Button_Click"/>
+                <Button Content="Удалить матерьял" Click="Button_Click_1"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2" Background="{StaticResource additional}"/>
+    </Grid>
+</Page>
